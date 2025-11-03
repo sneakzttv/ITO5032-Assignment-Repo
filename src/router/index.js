@@ -3,12 +3,14 @@ import HomePage from '../components/HomePage.vue'
 import AboutPage from '../components/AboutPage.vue'
 import GetSupportPage from '../components/GetSupportPage.vue'
 import GiveSupportPage from '../components/GiveSupportPage.vue'
+import CharityNewsPage from '../components/CharityNewsPage.vue'
 
 const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },
   { path: '/get-support', component: GetSupportPage },
   { path: '/give-support', component: GiveSupportPage },
+  { path: '/charity-news', component: CharityNewsPage },
 ]
 
 const router = createRouter({

@@ -34,7 +34,7 @@
 
       <!-- Right image -->
       <div class="get-support-content-right">
-        <img src="../images/helping-hands.png" alt="Helping Hands" />
+        <img src="../images/helping-hands.png" />
       </div>
     </div>
   </main>

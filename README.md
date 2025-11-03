@@ -1,7 +1,9 @@
-# 🌟 MaxPower Vue Web App
+# 🌟 MaxPower Low Income Charity Web App
 
-Welcome to the **MaxPower** website project — a clean, responsive Vue.js application for a community support and charity organization.  
-Built with modern web technologies, it features a reusable global layout, routing, and simple component-based modular architecture.
+Welcome to the **MaxPower** website application for a low income family support organization.<br>  
+Built with vue, it features a reusable layout, routing, and a modular architecture.<br>
+
+<img src="../images/homepage.png" />
 
 ---
 
@@ -26,9 +28,9 @@ This will update all of the dependencies in the local repository.
 npm install
 ```
 
-If this cannot be run due to system permissions bypass it with the command below.
-This command allows PowerShell to run scripts and commands only for the current session.
-It's safe and commonly used when npm/node scripts are blocked.
+If this cannot be run due to system permissions bypass it with the command below.<br>
+This command allows PowerShell to run scripts and commands only for the current session.<br>
+It's safe and commonly used when npm/node scripts are blocked.<br>
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
@@ -36,9 +38,9 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 ### 3️⃣ Run the server
 
-Next you can initialize the server by entering the command below.
-Leave this running in the background whilst looking around.
-It can be closed by pressing Ctrl + C in the terminal.
+Next you can initialize the server by entering the command below.<br>
+Leave this running in the background whilst looking around.<br>
+It can be closed by pressing Ctrl + C in the terminal.<br>
 
 ```powershell
 npm run dev
@@ -46,5 +48,5 @@ npm run dev
 
 ### 4️⃣ Connect to the local host web server in the browser
 
-Once the server is running, visit the app at:
+Once the server is running, visit the app at:<br>
 👉 [Open App In Browser](http://localhost:5173/)

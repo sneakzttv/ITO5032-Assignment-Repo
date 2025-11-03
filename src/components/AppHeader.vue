@@ -2,8 +2,8 @@
 <template>
   <header class="header">
     <div class="top-bar">
-      <h1>MaxPower</h1>
-      <p>691 Collins Street Melbourne (03) 6271 3348</p>
+      <h1>💸MaxPower💸</h1>
+      <p>🏠691 Collins Street Melbourne 📞(03) 6271 3348</p>
     </div>
     <nav class="nav">
       <router-link to="/">Home</router-link>
