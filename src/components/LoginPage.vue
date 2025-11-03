@@ -1,3 +1,7 @@
+<script setup>
+import '../style/login.css'
+</script>
+
 <template>
   <main class="content">
     <section class="login-box">

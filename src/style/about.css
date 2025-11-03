@@ -1,0 +1,21 @@
+/* ===== ABOUT PAGE ===== */
+.about-box {
+  background: #222;
+  color: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-box h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-sections {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}

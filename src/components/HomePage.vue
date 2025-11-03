@@ -1,3 +1,7 @@
+<script setup>
+import '../style/home.css'
+</script>
+
 <template>
   <!-- Call To Action -->
   <main class="content">

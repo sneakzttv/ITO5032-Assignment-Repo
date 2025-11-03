@@ -1,0 +1,17 @@
+/* ===== MESSAGE SUCCESS PAGE ===== */
+.message-success-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  color: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 800px;
+  margin: 60px auto;
+}
+
+.message-success-image img {
+  max-width: 150px;
+  height: auto;
+}

@@ -1,0 +1,38 @@
+/* ===== CONTACT PAGE ===== */
+.contact-cta {
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 30px;
+  gap: 60px;
+}
+
+.contact-cta h2 {
+  text-align: center;
+}
+
+.contact-cta p {
+  text-align: center;
+}
+
+.contact-info {
+  flex: 1;
+  background: #111;
+  border-radius: 12px;
+  padding: 120px 0 0 0;
+  color: #ccc;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 30px;
+}
+
+.card img {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+}

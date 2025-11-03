@@ -1,0 +1,70 @@
+/* ===== HOME PAGE ===== */
+.cta {
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 60px 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.cta-text {
+  max-width: 500px;
+  text-align: center;
+}
+
+.cta-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-text p {
+  margin: 0 0 25px 100px;
+  font-size: 1.1rem;
+  max-width: 300px;
+}
+
+.cta-text button {
+  background: #bef264;
+  color: #000;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cta-img img {
+  width: 200px;
+  margin: 0 80px 0 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  background: #222;
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 300px;
+}
+
+.card button {
+  background: #bef264;
+  color: #000;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}

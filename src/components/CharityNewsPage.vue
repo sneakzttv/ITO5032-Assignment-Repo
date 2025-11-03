@@ -1,3 +1,7 @@
+<script setup>
+import '../style/charity-news.css'
+</script>
+
 <template>
   <main class="content">
     <!-- Charity News Section -->
@@ -26,20 +30,18 @@
 
     <!-- Upcoming Events Section -->
     <section class="upcoming-events">
-      <h2>Upcoming Events</h2>
-      <div class="events-row">
-        <div class="event-card">
+      <div class="events-card">
+        <h2>Upcoming Events</h2>
+        <div class="events-card-images">
           <img src="../images/food-drive.png" alt="Food Drive" />
-          <h3>Food Drive</h3>
-        </div>
-        <div class="event-card">
           <img src="../images/back-to-school.png" alt="Back To School" />
-          <h3>Back To School</h3>
-        </div>
-        <div class="event-card">
           <img src="../images/sport-kick.png" alt="Sport Kick" />
-          <h3>Sport Kick</h3>
         </div>
+        <h3>Helping Hands Reach 1,000 Families</h3>
+        <p>
+          Our volunteers worked tirelessly to provide food and support to over 1,000 families this
+          month.
+        </p>
       </div>
     </section>
   </main>
