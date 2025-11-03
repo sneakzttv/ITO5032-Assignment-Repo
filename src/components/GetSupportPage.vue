@@ -2,19 +2,20 @@
   <main class="get-support-content">
     <div class="get-support-title">
       <h2>Need Support?</h2>
+      <p>We're here to guide you through the process and answer your questions.</p>
     </div>
 
     <div class="get-support-content-row">
-      <!-- Left text -->
-      <div class="get-support-content-left">
+      <div class="get-support-left-box">
         <p>
-          Don't worry, our team is here to help, simply fill out this form and one of our friendly
+          Don't worry, our team is here to help simply fill out this form and one of our friendly
           staff members will be in touch.
         </p>
+        <img src="../images/helping-hands.png" alt="Helping Hands" />
       </div>
 
-      <!-- Middle form -->
-      <div class="get-support-content-middle">
+      <!-- Right form -->
+      <div class="get-support-content-right">
         <form class="support-form">
           <label for="name">Full Name</label>
           <input type="text" id="name" name="name" placeholder="Your full name" required />
@@ -32,11 +33,6 @@
             <button type="submit" class="btn">Submit</button>
           </router-link>
         </form>
-      </div>
-
-      <!-- Right image -->
-      <div class="get-support-content-right">
-        <img src="../images/helping-hands.png" />
       </div>
     </div>
   </main>
