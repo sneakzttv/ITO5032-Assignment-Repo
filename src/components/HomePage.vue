@@ -5,7 +5,9 @@
       <div class="cta-text">
         <h2>Living on a low income doesn’t have to be so difficult</h2>
         <p>Apply for support today, our friendly staff are just a moment away!</p>
-        <button>Apply Now!</button>
+        <router-link to="/get-support">
+          <button>Apply Now!</button>
+        </router-link>
       </div>
       <div class="cta-img">
         <img src="../images/wallet.png" />
@@ -21,13 +23,13 @@
         </router-link>
       </div>
       <div class="card">
-        <h3>Want to organize an event?</h3>
+        <h3>Would you like to organize an event?</h3>
         <router-link to="/charity-news">
           <button>Events</button>
         </router-link>
       </div>
       <div class="card">
-        <h3>Need to contact someone?</h3>
+        <h3>Need to contact someone at the charity?</h3>
         <router-link to="/contact">
           <button>Contact</button>
         </router-link>
