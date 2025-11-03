@@ -1,3 +1,7 @@
+<script setup>
+import '../style/message-success.css'
+</script>
+
 <template>
   <main class="content">
     <section class="message-success-box">

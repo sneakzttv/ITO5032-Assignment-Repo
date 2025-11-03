@@ -1,3 +1,7 @@
+<script setup>
+import '../style/get-support.css'
+</script>
+
 <template>
   <main class="get-support-content">
     <div class="get-support-title">

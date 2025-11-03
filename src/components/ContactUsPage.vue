@@ -1,6 +1,10 @@
+<script setup>
+import '../style/contact.css'
+</script>
+
 <template>
   <main class="content">
-    <!-- Contact CTA Section -->
+    <!-- Contact Section -->
     <section class="contact-cta">
       <div class="support-form">
         <h2>Contact Us</h2>

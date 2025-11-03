@@ -1,3 +1,7 @@
+<script setup>
+import '../style/about.css'
+</script>
+
 <template>
   <div class="about-page">
     <!-- Main Content -->

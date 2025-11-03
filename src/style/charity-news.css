@@ -1,0 +1,49 @@
+/* ===== CHARITY NEWS PAGE ===== */
+.charity-news-box {
+  background: #222;
+  border-radius: 16px;
+  padding: 40px 30px;
+  color: white;
+  text-align: center;
+}
+
+.charity-news-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.news-card {
+  background: #333;
+  border-radius: 12px;
+  padding: 20px 25px;
+  text-align: center;
+  color: white;
+}
+
+.events-card {
+  background: #333;
+  border-radius: 12px;
+  margin-top: 40px;
+  padding: 20px 25px;
+  text-align: center;
+  color: white;
+}
+
+.events-card-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.events-card img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.upcoming-events h2 {
+  text-align: center;
+}
