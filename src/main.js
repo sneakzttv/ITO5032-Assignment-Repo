@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
+// Import global css rules
+import './style/main.css'
 
-createApp(App).mount('#app')
+// Create and mount app with router enabled
+createApp(App).use(router).mount('#app')

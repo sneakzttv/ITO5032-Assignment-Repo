@@ -1,11 +1,17 @@
-<script setup></script>
-
+<!-- Uniform page layout, header -> content via router -> footer -->
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div>
+    <AppHeader />
+    <router-view />
+    <AppFooter />
+  </div>
 </template>
 
-<style scoped></style>
+<script>
+import AppHeader from '@/components/AppHeader.vue'
+import AppFooter from '@/components/AppFooter.vue'
+
+export default {
+  components: { AppHeader, AppFooter },
+}
+</script>
