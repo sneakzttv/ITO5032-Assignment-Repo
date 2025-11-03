@@ -193,14 +193,31 @@ footer {
 /* ===== GET SUPPORT PAGE ===== */
 .get-support-content {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 60px 40px;
+  background-color: #222;
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.get-support-title {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .get-support-title h2 {
   font-size: 2rem;
-  margin-bottom: 40px;
-  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.get-support-title p {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: bold;
 }
 
 .get-support-content-row {
@@ -208,27 +225,109 @@ footer {
   gap: 40px;
   flex-wrap: wrap;
   align-items: center;
-
-  background-color: #222;
-  color: #fff;
-  border-radius: 16px;
-  padding: 40px 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-align: center;
 }
 
 .get-support-content-left {
   flex: 1;
-  min-width: 250px;
+  min-width: 150px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+}
+
+.get-support-content-left img {
+  width: 120px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.get-support-content-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.get-support-content-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.get-support-content-right label {
   font-weight: bold;
 }
 
-.get-support-content-middle {
+.get-support-content-right input,
+.get-support-content-right textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.get-support-content-right input:focus,
+.get-support-content-right textarea:focus {
+  outline: 2px solid #bef264;
+}
+
+.get-support-content-right button {
+  background: #bef264;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.get-support-content-right button:hover {
+  background: #a3e635;
+}
+
+.get-support-left-box {
   flex: 1;
-  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.get-support-left-box img {
+  width: 250px;
+  height: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .get-support-content-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .get-support-content-left,
+  .get-support-content-right {
+    min-width: 100%;
+  }
+
+  .get-support-content-left img {
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .get-support-left-box {
+    max-width: 100%;
+  }
+
+  .get-support-left-box img {
+    width: 100px;
+  }
 }
 
 /* ===== CONTACT FORM ===== */
@@ -280,7 +379,6 @@ footer {
   min-width: 250px;
 }
 
-/* ===== GET SUPPORT IMAGE ===== */
 .get-support-content-right img {
   max-width: 60%;
   height: auto;
@@ -291,14 +389,19 @@ footer {
 /* ===== GIVE SUPPORT PAGE ===== */
 .give-support-content {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 60px 40px;
+  background-color: #222;
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .give-support-title h2 {
   font-size: 2rem;
-  margin-bottom: 40px;
   text-align: center;
+  margin-bottom: 40px;
+  color: white;
 }
 
 .give-support-content-row {
@@ -306,37 +409,22 @@ footer {
   gap: 40px;
   flex-wrap: wrap;
   align-items: center;
-
-  background-color: #222;
-  color: #fff;
-  border-radius: 16px;
-  padding: 40px 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.give-support-content-left {
-  flex: 1;
-  min-width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: bold;
-}
-
-.give-support-content-middle {
-  flex: 1;
-  min-width: 300px;
-}
-
+.give-support-content-left,
+.give-support-content-middle,
 .give-support-content-right {
   flex: 1;
   min-width: 250px;
 }
 
-/* ===== GIVE SUPPORT IMAGE ===== */
+.give-support-content-left p {
+  text-align: center;
+  font-weight: bold;
+}
+
 .give-support-content-middle img {
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -433,6 +521,7 @@ footer {
 
 .contact-cta h2 {
   text-align: center;
+  font-size: 30px;
 }
 
 /* ===== CONTACT INFO ===== */
