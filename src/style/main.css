@@ -156,7 +156,6 @@ footer {
 }
 
 /* ===== ABOUT PAGE ===== */
-
 .about-box {
   background: #222;
   color: white;
@@ -282,7 +281,6 @@ footer {
 }
 
 /* ===== GET SUPPORT IMAGE ===== */
-
 .get-support-content-right img {
   max-width: 60%;
   height: auto;
@@ -337,7 +335,6 @@ footer {
 }
 
 /* ===== GIVE SUPPORT IMAGE ===== */
-
 .give-support-content-middle img {
   max-width: 60%;
   height: auto;
@@ -346,7 +343,6 @@ footer {
 }
 
 /* ===== CHARITY NEWS PAGE ===== */
-
 .charity-news-box {
   background: #222;
   color: white;
@@ -404,16 +400,77 @@ footer {
   margin: 0;
 }
 
+/* ===== CONTACT PAGE ===== */
+.contact-cta {
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 16px;
+  padding: 30px 30px;
+  margin-bottom: 80px;
+  gap: 60px;
+}
+
+.contact-cta h2 {
+  text-align: center;
+}
+
+/* ===== CONTACT INFO ===== */
+.contact-info {
+  flex: 1;
+  background: #111;
+  border-radius: 12px;
+  padding: 30px;
+  line-height: 1.6;
+  margin-top: 110px;
+}
+
+.contact-info h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #ccc;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* ===== ICON CARDS ===== */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #222;
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 150px;
+}
+
+.card img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-  .cta {
+  .cta,
+  .contact-cta {
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
-  }
-
-  .c-img img {
-    margin-top: 20px;
   }
 
   .cards {
@@ -431,5 +488,9 @@ footer {
     flex-wrap: wrap;
     gap: 15px;
     font-size: 1rem;
+  }
+
+  .contact-info {
+    width: 100%;
   }
 }

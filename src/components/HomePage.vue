@@ -16,15 +16,21 @@
     <section class="cards">
       <div class="card">
         <h3>Interested in becoming a donor?</h3>
-        <button>Donate</button>
+        <router-link to="/give-support">
+          <button>Donate</button>
+        </router-link>
       </div>
       <div class="card">
         <h3>Want to organize an event?</h3>
-        <button>Events</button>
+        <router-link to="/charity-news">
+          <button>Events</button>
+        </router-link>
       </div>
       <div class="card">
         <h3>Need to contact someone?</h3>
-        <button>Contact</button>
+        <router-link to="/contact">
+          <button>Contact</button>
+        </router-link>
       </div>
     </section>
   </main>
