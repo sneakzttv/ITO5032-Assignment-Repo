@@ -2,13 +2,15 @@
   <div class="about-page">
     <!-- Main Content -->
     <main class="content">
-      <section class="intro">
-        <h2>About MaxPower</h2>
-        <p>
-          At MaxPower, our mission is to provide compassionate, effective support to families living
-          on a low income. We believe that everyone deserves stability, dignity, and a helping hand
-          when life gets tough.
-        </p>
+      <section class="about-box">
+        <div class="intro">
+          <h2>About MaxPower</h2>
+          <p>
+            At MaxPower, our mission is to provide compassionate, effective support to families
+            living on a low income. We believe that everyone deserves stability, dignity, and a
+            helping hand when life gets tough.
+          </p>
+        </div>
       </section>
 
       <!-- Card Content -->
