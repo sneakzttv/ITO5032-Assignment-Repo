@@ -3,7 +3,7 @@
 Welcome to the **MaxPower** website application for a low income family support organization.<br>  
 Built with vue, it features a reusable layout, routing, and a modular architecture.<br>
 
-<img src="../images/homepage.png" />
+<img src="src/images/homepage.png" />
 
 ---
 
