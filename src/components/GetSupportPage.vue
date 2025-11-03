@@ -28,7 +28,9 @@
             placeholder="Your message"
             required
           ></textarea>
-          <button type="submit" class="btn">Submit</button>
+          <router-link to="/message-success">
+            <button type="submit" class="btn">Submit</button>
+          </router-link>
         </form>
       </div>
 
