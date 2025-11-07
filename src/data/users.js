@@ -1,4 +1,5 @@
 export default [
-  { id: 1, username: 'Cloud', password: 'RedDog123' },
-  { id: 2, username: 'Tifa', password: 'Lockheartz101' },
+  { id: 1, username: 'Sarah', password: 'Waffles123' },
+  { id: 2, username: 'Emily', password: 'Apples123' },
+  { id: 3, username: 'Rachel', password: 'Bananas123' },
 ]

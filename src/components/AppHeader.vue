@@ -11,6 +11,7 @@
       <router-link to="/get-support">Get Support</router-link>
       <router-link to="/give-support">Give Support</router-link>
       <router-link to="/charity-news">Charity News</router-link>
+      <router-link to="/rate">Rate Staff</router-link>
       <router-link to="/contact">Contact Us</router-link>
       <router-link to="/login">Login</router-link>
     </nav>

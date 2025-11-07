@@ -53,6 +53,10 @@ function handleSubmit(e) {
   if (!validateClient()) return
 
   console.log('Login successful:', form)
+
+  // Store username for rating page.
+  localStorage.setItem('username', form.username)
+
   // Moves to success page.
   router.push('/login-success')
 }
@@ -68,7 +72,7 @@ function handleSubmit(e) {
           <p>Please enter your login details</p>
 
           <form @submit="handleSubmit" novalidate>
-            <!-- HTML5 validation: required + minlength -->
+            <!-- HTML5 validation -->
             <input
               v-model="form.username"
               type="text"
@@ -80,7 +84,7 @@ function handleSubmit(e) {
             />
             <p v-if="errors.username" class="error-text">{{ errors.username }}</p>
 
-            <!-- HTML5 validation: required + minlength -->
+            <!-- HTML5 validation -->
             <input
               v-model="form.password"
               type="password"
