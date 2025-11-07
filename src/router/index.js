@@ -12,6 +12,7 @@ import PrivacyPolicyPage from '@/components/PrivacyPolicyPage.vue'
 import TermsAndConditionsPage from '@/components/TermsAndConditionsPage.vue'
 import RegisterPage from '@/components/RegisterPage.vue'
 import RatingPage from '@/components/RatingPage.vue'
+import AdminPage from '@/components/AdminPage.vue'
 
 const routes = [
   { path: '/', component: HomePage },
@@ -27,11 +28,28 @@ const routes = [
   { path: '/terms-and-conditions', component: TermsAndConditionsPage },
   { path: '/register', component: RegisterPage },
   { path: '/rate', component: RatingPage },
+  { path: '/admin', component: AdminPage, meta: { requiresRole: 'admin' } },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+})
+
+router.beforeEach((to, from, next) => {
+  const requiredRole = to.meta.requiresRole
+  if (!requiredRole) return next()
+
+  const userRole = localStorage.getItem('role')
+
+  if (userRole === requiredRole) {
+    return next()
+  } else {
+    // Alerts user they can't view the page.
+    alert('Access denied. You do not have permission to view this page.')
+    // Moves to the homepage.
+    return next('/')
+  }
 })
 
 export default router

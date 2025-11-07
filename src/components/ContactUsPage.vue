@@ -38,7 +38,8 @@ async function handleSubmit() {
         <h2>Contact Us</h2>
         <p>
           We’d love to hear from you! Fill out the form below and our team will get back to you
-          soon.
+          soon. Feel free to upload an image for our friendly community board to get to know
+          everyone a little better.
         </p>
 
         <form class="support-form" @submit.prevent="handleSubmit" enctype="multipart/form-data">

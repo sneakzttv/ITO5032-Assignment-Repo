@@ -65,7 +65,7 @@ function getAverage(staffId) {
                 ★
               </span>
             </div>
-            <button @click="submitRating(staff.id)">Submit Rating</button>
+            <button class="submit-button" @click="submitRating(staff.id)">Submit Rating</button>
           </div>
           <div v-else>
             <p class="login-warning">Log in to rate this staff member.</p>
