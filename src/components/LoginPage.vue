@@ -1,9 +1,13 @@
 <script setup>
 import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
+import users from '../data/users.js'
 import '../style/login.css'
 
 const router = useRouter()
+
+// TODO: Still needed maybe? Check later
+const registeredUsers = reactive([...users])
 
 const form = reactive({
   username: '',
@@ -35,7 +39,7 @@ function validateClient() {
   return valid
 }
 
-// Stops standard form send function so we can process.
+// Stops standard form send function so we can process the data.
 function handleSubmit(e) {
   e.preventDefault()
 
@@ -87,7 +91,10 @@ function handleSubmit(e) {
             />
             <p v-if="errors.password" class="error-text">{{ errors.password }}</p>
 
-            <button type="submit">Login</button>
+            <button type="submit">Proceed</button>
+            <router-link to="/register">
+              <button>Register</button>
+            </router-link>
           </form>
         </div>
 
