@@ -1,5 +1,33 @@
 <script setup>
 import '../style/contact.css'
+import { ref } from 'vue'
+
+const form = ref({
+  name: '',
+  email: '',
+  message: '',
+})
+
+const file = ref(null)
+
+function handleFile(e) {
+  file.value = e.target.files[0]
+}
+
+async function handleSubmit() {
+  const formData = new FormData()
+  formData.append('name', form.value.name)
+  formData.append('email', form.value.email)
+  formData.append('message', form.value.message)
+  if (file.value) formData.append('file', file.value)
+
+  await fetch('http://localhost:3000/send-email', {
+    method: 'POST',
+    body: formData,
+  })
+
+  alert('Message sent successfully!')
+}
 </script>
 
 <template>
@@ -13,22 +41,20 @@ import '../style/contact.css'
           soon.
         </p>
 
-        <form class="support-form">
+        <form class="support-form" @submit.prevent="handleSubmit" enctype="multipart/form-data">
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your full name" required />
+          <input type="text" id="name" v-model="form.name" required />
+
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required />
+          <input type="email" id="email" v-model="form.email" required />
+
           <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Your message"
-            required
-          ></textarea>
-          <router-link to="/message-success">
-            <button type="submit" class="btn">Submit</button>
-          </router-link>
+          <textarea id="message" v-model="form.message" rows="5" required></textarea>
+
+          <label for="file">Upload Image (optional)</label>
+          <input type="file" id="file" @change="handleFile" accept="image/*" />
+
+          <button type="submit" class="btn">Submit</button>
         </form>
       </div>
 

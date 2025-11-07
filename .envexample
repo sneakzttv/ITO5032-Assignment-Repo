@@ -1,0 +1,2 @@
+// Recreate this as a .env file with udpated values to test the system.
+SENDGRID_API_KEY=
