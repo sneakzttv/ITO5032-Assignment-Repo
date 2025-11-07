@@ -10,6 +10,7 @@ import LoginSuccessPage from '@/components/LoginSuccessPage.vue'
 import MessageSuccessPage from '@/components/MessageSuccessPage.vue'
 import PrivacyPolicyPage from '@/components/PrivacyPolicyPage.vue'
 import TermsAndConditionsPage from '@/components/TermsAndConditionsPage.vue'
+import RegisterPage from '@/components/RegisterPage.vue'
 
 const routes = [
   { path: '/', component: HomePage },
@@ -23,6 +24,7 @@ const routes = [
   { path: '/message-success', component: MessageSuccessPage },
   { path: '/privacy-policy', component: PrivacyPolicyPage },
   { path: '/terms-and-conditions', component: TermsAndConditionsPage },
+  { path: '/register', component: RegisterPage },
 ]
 
 const router = createRouter({
