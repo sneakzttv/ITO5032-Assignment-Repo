@@ -6,17 +6,17 @@ import '../style/login.css'
 
 const router = useRouter()
 
-// TODO: Still needed maybe? Check later
-const registeredUsers = reactive([...users])
-
+// Clears previous input data.
 const form = reactive({
   username: '',
   password: '',
 })
 
+// Clears previous input data.
 const errors = reactive({
   username: '',
   password: '',
+  login: '',
 })
 
 // Validation checks.
@@ -52,13 +52,24 @@ function handleSubmit(e) {
 
   if (!validateClient()) return
 
-  console.log('Login successful:', form)
+  // Check user credentials.
+  const user = users.find((u) => u.username === form.username && u.password === form.password)
 
-  // Store username for rating page.
-  localStorage.setItem('username', form.username)
+  if (!user) {
+    errors.login = 'Incorrect username or password.'
+    return
+  }
 
-  // Moves to success page.
-  router.push('/login-success')
+  // Store login session so it can be used for rating and access.
+  localStorage.setItem('username', user.username)
+  localStorage.setItem('role', user.role)
+
+  // Redirect based on role.
+  if (user.role === 'admin') {
+    router.push('/admin')
+  } else {
+    router.push('/login-success')
+  }
 }
 </script>
 
@@ -93,11 +104,13 @@ function handleSubmit(e) {
               minlength="6"
               :class="{ 'input-error': errors.password }"
             />
+
             <p v-if="errors.password" class="error-text">{{ errors.password }}</p>
+            <p v-if="errors.login" class="error-text">{{ errors.login }}</p>
 
             <button type="submit">Proceed</button>
             <router-link to="/register">
-              <button>Register</button>
+              <button type="button">Register</button>
             </router-link>
           </form>
         </div>

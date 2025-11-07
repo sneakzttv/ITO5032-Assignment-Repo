@@ -1,0 +1,42 @@
+/* ===== ADMIN PAGE ===== */
+.admin-page {
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.admin-content-box {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 15px;
+  display: inline-block;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.user-table {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.role {
+  text-transform: capitalize;
+  color: gold;
+}
+
+.export-button {
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background-color: #bef264;
+  border: none;
+  border-radius: 6px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}

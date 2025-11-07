@@ -39,6 +39,7 @@ function handleRegister(e) {
     id: users.value.length + 1,
     username: newUser.username,
     password: newUser.password,
+    role: 'viewer',
   }
 
   users.value.push(newEntry)
