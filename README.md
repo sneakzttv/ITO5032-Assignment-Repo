@@ -46,6 +46,12 @@ It can be closed by pressing Ctrl + C in the terminal.<br>
 npm run dev
 ```
 
+To run the backend (optional to test mail client)
+
+```powershell
+node server.js
+```
+
 ### 4️⃣ Connect to the local host web server in the browser
 
 Once the server is running, visit the app at:<br>
