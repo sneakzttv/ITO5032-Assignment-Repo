@@ -73,13 +73,13 @@ async function handleSubmit() {
     <!-- Info Cards Section -->
     <section class="cards">
       <div class="card">
-        <img src="../images/phone.png" />
+        <img src="/images/phone.png" />
       </div>
       <div class="card">
-        <img src="../images/email.png" />
+        <img src="/images/email.png" />
       </div>
       <div class="card">
-        <img src="../images/address.png" />
+        <img src="/images/address.png" />
       </div>
     </section>
   </main>

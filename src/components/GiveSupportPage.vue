@@ -16,7 +16,7 @@ import '../style/give-support.css'
     <div class="give-support-content-row">
       <!-- Left image -->
       <div class="give-support-content-left">
-        <img src="../images/teamwork.png" />
+        <img src="/images/teamwork.png" />
       </div>
 
       <!-- Right form -->

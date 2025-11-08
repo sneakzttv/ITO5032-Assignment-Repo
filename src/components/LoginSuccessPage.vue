@@ -11,7 +11,7 @@ import '../style/login-success.css'
         <p>You may now continue browsing the website</p>
       </div>
       <div class="login-success-image">
-        <img src="../images/tick.png" alt="Success" />
+        <img src="/images/tick.png" alt="Success" />
       </div>
     </section>
   </main>

@@ -34,9 +34,9 @@ import '../style/charity-news.css'
       <div class="events-card">
         <h2>Upcoming Events</h2>
         <div class="events-card-images">
-          <img src="../images/food-drive.png" alt="Food Drive" />
-          <img src="../images/back-to-school.png" alt="Back To School" />
-          <img src="../images/sport-kick.png" alt="Sport Kick" />
+          <img src="/images/food-drive.png" alt="Food Drive" />
+          <img src="/images/back-to-school.png" alt="Back To School" />
+          <img src="/images/sport-kick.png" alt="Sport Kick" />
         </div>
         <h3>Helping Hands Reach 1,000 Families</h3>
         <p>

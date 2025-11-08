@@ -88,7 +88,7 @@ function handleRegister(e) {
         </div>
 
         <div class="login-image">
-          <img src="../images/login.png" alt="Register" />
+          <img src="/images/login.png" alt="Register" />
         </div>
       </div>
     </section>

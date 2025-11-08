@@ -11,7 +11,7 @@ import '../style/message-success.css'
         <p>We'll get back to you as soon as we can.</p>
       </div>
       <div class="message-success-image">
-        <img src="../images/tick.png" alt="Success" />
+        <img src="/images/tick.png" alt="Success" />
       </div>
     </section>
   </main>

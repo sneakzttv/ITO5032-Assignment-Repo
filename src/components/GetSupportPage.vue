@@ -60,7 +60,7 @@ function changePage(page) {
           Don't worry, our team is here to help simply fill out this form and one of our friendly
           staff members will be in touch.
         </p>
-        <img src="../images/helping-hands.png" alt="Helping Hands" />
+        <img src="/images/helping-hands.png" alt="Helping Hands" />
       </div>
 
       <div class="get-support-content-right">
