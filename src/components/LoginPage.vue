@@ -119,7 +119,7 @@ function handleSubmit(e) {
 
         <!-- Login Image -->
         <div class="login-image">
-          <img src="../images/login.png" alt="Login" />
+          <img src="/images/login.png" alt="Login" />
         </div>
       </div>
     </section>

@@ -15,7 +15,7 @@ import '../style/home.css'
         </router-link>
       </div>
       <div class="cta-img">
-        <img src="../images/wallet.png" />
+        <img src="/images/wallet.png" />
       </div>
     </section>
 
