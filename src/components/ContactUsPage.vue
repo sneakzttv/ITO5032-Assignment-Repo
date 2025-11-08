@@ -1,7 +1,9 @@
 <script setup>
+// Loading CSS.
 import '../style/contact.css'
 import { ref } from 'vue'
 
+// Resets data to prevent previous data from causing issues.
 const form = ref({
   name: '',
   email: '',
@@ -14,6 +16,7 @@ function handleFile(e) {
   file.value = e.target.files[0]
 }
 
+// Handles sending contact message.
 async function handleSubmit() {
   const formData = new FormData()
   formData.append('name', form.value.name)

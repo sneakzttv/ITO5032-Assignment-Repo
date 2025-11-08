@@ -1,4 +1,5 @@
 <script setup>
+// Loading CSS.
 import '../style/login-success.css'
 </script>
 

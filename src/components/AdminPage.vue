@@ -1,8 +1,12 @@
 <script setup>
+// Loading CSS.
 import '../style/admin.css'
+// Loading user data.
 import users from '../data/users.js'
+// Loading pdf fucntionality.
 import jsPDF from 'jspdf'
 
+// Export table data to PDF function.
 function exportPDF() {
   const doc = new jsPDF()
 

@@ -1,4 +1,5 @@
 <script setup>
+// Loading CSS.
 import '../style/home.css'
 </script>
 

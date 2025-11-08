@@ -1,3 +1,4 @@
+// 3rd party charity details.
 export const charities = [
   {
     name: 'Helping Hearts Foundation',

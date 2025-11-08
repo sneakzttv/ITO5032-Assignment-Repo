@@ -1,3 +1,4 @@
+// Staff member descriptions.
 export const staffList = [
   {
     id: 1,
