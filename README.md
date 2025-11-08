@@ -5,7 +5,7 @@ Built with vue, it features a reusable layout, routing, and a modular architectu
 
 <img src="public/images/homepage.png" />
 
-👉 [Cloudflare Deployment](maxpower-charity.pages.dev)
+👉 [Cloudflare Deployment](https://maxpower-charity.pages.dev/)
 
 ---
 
