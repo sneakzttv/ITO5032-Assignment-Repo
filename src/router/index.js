@@ -14,6 +14,7 @@ import RegisterPage from '@/components/RegisterPage.vue'
 import RatingPage from '@/components/RatingPage.vue'
 import AdminPage from '@/components/AdminPage.vue'
 
+// Pages.
 const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },
@@ -31,18 +32,23 @@ const routes = [
   { path: '/admin', component: AdminPage, meta: { requiresRole: 'admin' } },
 ]
 
+// Creates the router instance for the app.
 const router = createRouter({
   history: createWebHistory(),
   routes,
 })
 
+// Checks role access for pages.
 router.beforeEach((to, from, next) => {
   const requiredRole = to.meta.requiresRole
   if (!requiredRole) return next()
 
+  // Sets role in storage.
   const userRole = localStorage.getItem('role')
 
+  // Role page logic.
   if (userRole === requiredRole) {
+    // Allows user to view the page.
     return next()
   } else {
     // Alerts user they can't view the page.

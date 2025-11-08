@@ -1,3 +1,4 @@
+// User login details.
 export default [
   { id: 1, username: 'Sarah', password: 'Waffles123', role: 'admin' },
   { id: 2, username: 'Emily', password: 'Apples123', role: 'staff' },

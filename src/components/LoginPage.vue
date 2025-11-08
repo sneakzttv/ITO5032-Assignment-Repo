@@ -1,8 +1,10 @@
 <script setup>
 import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
-import users from '../data/users.js'
+// Loading CSS.
 import '../style/login.css'
+// Loading user data.
+import users from '../data/users.js'
 
 const router = useRouter()
 

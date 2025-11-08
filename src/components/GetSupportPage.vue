@@ -33,7 +33,7 @@ const filteredCharities = computed(() => {
   return result
 })
 
-// Pagination.
+// Pagination & sorting.
 const totalPages = computed(() => Math.ceil(filteredCharities.value.length / itemsPerPage))
 
 const paginatedCharities = computed(() => {
@@ -41,6 +41,7 @@ const paginatedCharities = computed(() => {
   return filteredCharities.value.slice(start, start + itemsPerPage)
 })
 
+// Page changing.
 function changePage(page) {
   currentPage.value = page
 }

@@ -1,7 +1,9 @@
 <script setup>
 import { reactive, ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+// Loads user data.
 import usersData from '../data/users.js'
+// CSS borrowed from login page.
 
 const router = useRouter()
 

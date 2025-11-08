@@ -1,4 +1,5 @@
 <script setup>
+// Loading CSS.
 import '../style/privacy.css'
 </script>
 

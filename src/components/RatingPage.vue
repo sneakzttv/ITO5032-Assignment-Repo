@@ -1,7 +1,10 @@
 <script setup>
+// Loading CSS.
 import '../style/rating.css'
 import { ref } from 'vue'
+// Loading ratings data.
 import { ratings } from '../data/ratings.js'
+// Loading staff data.
 import { staffList } from '../data/staff.js'
 
 const loggedInUser = localStorage.getItem('username')
