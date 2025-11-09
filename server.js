@@ -1,14 +1,15 @@
 import express from 'express'
-import multer from 'multer'
+import cors from 'cors'
 import sgMail from '@sendgrid/mail'
+import multer from 'multer'
 import dotenv from 'dotenv'
 import fs from 'fs'
 
-// Allows access to process env.
+// Allows access to process env vars, this is where our API keys are.
 dotenv.config()
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-
 const app = express()
+app.use(cors())
 const upload = multer({ dest: 'uploads/' })
 
 // Creates email data and sends.
@@ -29,7 +30,7 @@ app.post('/send-email', upload.single('file'), async (req, res) => {
   // Creates message data.
   const msg = {
     to: 'maxpowercharityau@gmail.com',
-    from: 'no-reply@maxpowercharityau.com',
+    from: 'maxpowercharityau@gmail.com',
     subject: `New Message from ${name}`,
     text: `
 Name: ${name}
