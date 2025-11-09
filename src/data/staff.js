@@ -5,7 +5,7 @@ export const staffList = [
     name: 'Sarah Thompson',
     role: 'Family Support Coordinator',
     description: 'Helps families access emergency food, housing assistance and counseling.',
-    image: '../staff/sarah.png',
+    image: '/staff/sarah.png',
   },
   {
     id: 2,
@@ -19,6 +19,6 @@ export const staffList = [
     name: 'Rachel Lopez',
     role: 'Financial Aid Specialist',
     description: 'Manages emergency monetary support and budgeting workshops.',
-    image: '../staff/rachel.png',
+    image: '/staff/rachel.png',
   },
 ]

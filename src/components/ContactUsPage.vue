@@ -18,18 +18,23 @@ function handleFile(e) {
 
 // Handles sending contact message.
 async function handleSubmit() {
-  const formData = new FormData()
-  formData.append('name', form.value.name)
-  formData.append('email', form.value.email)
-  formData.append('message', form.value.message)
-  if (file.value) formData.append('file', file.value)
+  try {
+    const formData = new FormData()
+    formData.append('name', form.value.name)
+    formData.append('email', form.value.email)
+    formData.append('message', form.value.message)
+    if (file.value) formData.append('file', file.value)
 
-  await fetch('http://localhost:3000/send-email', {
-    method: 'POST',
-    body: formData,
-  })
+    const res = await fetch('http://localhost:3000/send-email', {
+      method: 'POST',
+      body: formData,
+    })
 
-  alert('Message sent successfully!')
+    if (!res.ok) throw new Error('Server error')
+    alert('Message sent successfully!')
+  } catch (err) {
+    alert('Failed to send message: ' + err.message)
+  }
 }
 </script>
 
